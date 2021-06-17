@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Number Sort Puzzle</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+
+  <body>
+    Sort the numbers from lowest to highest!
+    <br>
+    How many numbers do you want to sort?
+    <br>
+    <input type="number" id="numberInput" min="1" max="10" step="1" oninput="validity.valid||(value='');"></input>
+    <button onclick="startGame(document.getElementById('numberInput').value)">Time to start sorting!</button>
+    <div id="numberDisplay">
+      <table id="displayNumbersHere">
+        <tbody>
+          <tr id="displayRow"></tr>
+        </tbody>
+      </table>
+      <div id="answerInputsHere"></div>
+    </div>
+
+    <div id="resultDisplay"></div>
+
+  </body>
+  <script src="../js/numberSort.js"></script>
+</html>
